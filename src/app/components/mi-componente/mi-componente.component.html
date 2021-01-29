@@ -1,0 +1,10 @@
+<p></p><br>
+    <h1>Mi primer Componente en {{titulo}}</h1>
+    <h2>Esto en una prueba de {{nombre}}</h2>
+    <p>Sharp Sharp es sin identidad en {{ano}}</p>
+    <hr>
+    <button (click)="ocultarPrueba()">Ocultar Prueba</button>
+
+    <div *ngIf="mostrarPrueba">
+      <app-prueba></app-prueba>
+    </div>

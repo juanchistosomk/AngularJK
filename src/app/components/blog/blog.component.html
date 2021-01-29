@@ -1,0 +1,34 @@
+<app-slider [nombre]="'Blog'" [size]="'small'" ></app-slider>
+
+<div class="center">
+  <section id="content">
+    
+    <h2 class="subheader">Blog</h2>
+
+    <table class="table table-sm">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Trabajador</th>
+          <th scope="col">Email</th>
+          <th scope="col">Unidad</th>
+        </tr>
+      </thead>
+      <tbody>
+      
+        <tr *ngFor="let personas of persona">
+          <th scope="row">{{personas.ID}}</th>
+          <td colspan="2">{{personas.TRABAJADOR}}</td>
+          <td>{{personas.EMAIL}}</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </section>
+
+  <app-sidebar></app-sidebar>
+
+</div>
+
